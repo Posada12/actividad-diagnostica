@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario del Nary</title>
+  <link rel="stylesheet" href="JaimeZapata.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Registrese pues manito</h1>
+    <form action="#" method="post" class="formulario">
+      
+      <label for="nombre">Nombre completo</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Ej: kris R" required>
+
+      <label for="correo">Correo electrónico</label>
+      <input type="email" id="correo" name="correo" placeholder="Ej: nary@mail.com" required>
+
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" name="password" placeholder="Crea una contraseña" required>
+
+      <label for="fecha">Fecha de nacimiento</label>
+      <input type="date" id="fecha" name="fecha" required>
+
+      <fieldset class="campo-genero">
+        <legend>Género</legend>
+        <label><input type="radio" name="genero" value="femenino" required> Mujer</label>
+        <label><input type="radio" name="genero" value="masculino"> Hombre</label>
+        <label><input type="radio" name="genero" value="otro"> trabuco</label>
+        <label><input type="radio" name="genero" value="otro"> prefiero no decirlo</label>
+      </fieldset>
+
+      <label class="terminos">
+        <input type="checkbox" name="terminos" required>
+        No soy un robot
+      </label>
+
+      <button type="submit">Registrarme</button>
+    </form>
+  </main>
+</body>
+</html>
